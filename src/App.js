@@ -10,10 +10,8 @@ function App() {
 
   //const [record, setRecord] = React.useState(100);
 
-  const rec = parseInt(localStorage.getItem("record"))
-  console.log("RECORD " + rec)
-
- 
+  const rec = parseInt(localStorage.getItem("record"));
+  // console.log("RECORD " + rec);
 
   useEffect(() => {
     const allHeld = dice.every((die) => die.isHeld);
@@ -24,8 +22,6 @@ function App() {
       console.log("HAI VINTO");
     }
   }, [dice]);
-
-  
 
   function allNewDice() {
     const newDice = [];
@@ -54,15 +50,14 @@ function App() {
     } else {
       setTenzies(false);
       setDice(allNewDice());
-      isNewRecord()
+      isNewRecord();
       setAttemp(0);
     }
   }
 
-      function       isNewRecord() {
-        if(attemp < rec)
-          localStorage.setItem("record", JSON.stringify(attemp))
-      }
+  function isNewRecord() {
+    if (attemp < rec) localStorage.setItem("record", JSON.stringify(attemp));
+  }
 
   function holdDice(id) {
     setDice((oldDice) =>
@@ -99,7 +94,7 @@ function App() {
       <button className="roll-dice" onClick={rollDice}>
         {tenzies ? "New Game" : "Roll"}
       </button>
-      <p>Record: {rec === 10000 ? "Try" : rec  }</p>
+      <p>Record: {rec === 10000 ? "Try" : rec}</p>
     </div>
   );
 }
