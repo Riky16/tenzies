@@ -1,3 +1,3 @@
 # Tenzies
 
-![Game](tenzies/Tenzies_img.png)
+![Game](Tenzies_img.png)
