@@ -6,7 +6,7 @@ Tenzies è un giochino che consisten nell'avere la stessa faccia del dado su tut
 
 Il progetto è realizzato con REACT, utilizzando *useState* per gestire i vari stati del progetto come le facce del dado, *useEffect* per controllare se sono rivato al termine del gioco e ho "vinto" e il *Local storage* per tener conto del record fatto a Tenzies
 
-SKILL APPRESE:
+**SKILL APPRESE:**
 - React
 - *useState, useEffect, Local storage* cin REACT
 - CSS
